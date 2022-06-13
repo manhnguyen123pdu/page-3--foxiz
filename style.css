@@ -1,0 +1,585 @@
+    /* GLOBAL */
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        font-size: 16px;
+        font-family: 'Marcellus', serif;
+        background-color: #fafafa;
+        position: relative;
+
+    }
+
+    .line {
+        width: 100%;
+        height: 5px;
+        background-color: #e1a470;
+    }
+
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    .section {
+        margin: 50px 0;
+    }
+
+    .vissible {
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+
+    .vissible2 {
+        display: contents !important;
+    }
+
+    .color__icon {
+        color: #e1a470;
+    }
+
+    .background--black {
+        background-color: rgb(37, 35, 35) !important;
+        color: white;
+    }
+
+    .fix {
+        position: absolute;
+    }
+
+    .grid {
+        max-width: 1250px;
+        margin: auto;
+    }
+
+    /* header css */
+
+    header{
+        width: 100vw;
+        height: 100vh;
+        background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgb(41, 41, 41)),
+        url(https://foxiz.themeruby.com/fashion/wp-content/uploads/sites/4/2021/08/f16.jpg);
+        background-size: cover;
+        background-position: center;
+        box-sizing: border-box;
+        
+    }
+    .headerbottom__content{
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+    .header__bottom{
+        color: white;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+     .header__bottom h1{
+        font-size: 55px;
+        margin: 15px 0;
+     }
+     .header__bottom p{
+        font-size: 20px;
+        letter-spacing: 1px;
+        line-height: 25px;
+        margin: 15px 0;
+     }
+     .info{
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      
+     }
+     .info__left{
+        display: flex;
+        align-items: center;
+     }
+     .info__left img{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+     }
+     .info__left span{
+        display: block;
+        padding: 3px 10px;
+        font-size: 12px;
+        color: rgb(214, 214, 214);
+     }
+     .info__left span b{
+        color: white;
+     }
+     .info__right{
+        font-size: 13px;
+        
+     }
+     .info__right i{
+        padding: 0 3px;
+        transition: .5s;
+        font-size: 15px;
+     }
+     .info__right .fa-facebook-f:hover,  .info__right .fa-print:hover{
+        color: rgb(80, 80, 248);
+        transform: scale(1.3);
+     }
+     .info__right .fa-twitter:hover{
+        color: rgb(51, 150, 243);
+        transform: scale(1.3);
+     }
+     .info__right .fa-envelope:hover{
+        color: rgb(243, 208, 51);
+        transform: scale(1.3);
+     }
+
+
+
+    .logo {
+        position: relative;
+    }
+
+    .logodark {
+        position: absolute;
+        opacity: 0;
+    }
+
+    .taga {
+        color: white !important;
+    }
+
+    .taga:hover {
+        color: #e1a470 !important;
+    }
+
+    /* NAV CSS */
+    .navt a{
+        color: black;
+    }
+    .nav__big{
+        position: absolute;
+        width: 100%;
+    }
+    .navt {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        padding: 0 50px;
+        z-index: 1;
+
+    }
+    .navt__left{
+        display: flex;
+        align-items: center;
+
+    }
+    .navt__left .logo{
+        width: 100px;
+    }
+    nav {
+        max-width: 1250px;
+        margin: auto;
+    }
+
+    nav>ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        
+    }
+
+    nav>ul li {
+        padding: 10px;
+        font-size: 0.85rem;
+    }
+    nav>ul>li{
+        color: white;
+    }
+
+    nav ul li .nav__overlay {
+        position: absolute;
+        top: 70px;
+        background-color: rgb(255, 255, 255);
+        opacity: 0;
+        visibility: hidden;
+        transition: .5s;
+    }
+    nav ul li .nav__overlay ul li{
+        color: #291f1f;
+    }
+    nav ul li:hover .nav__overlay {
+        opacity: 1;
+        visibility: visible;
+        z-index: 1;
+    }
+
+    .nav__overlay1 {
+        width: 200px;
+        padding: 10px;
+
+    }
+
+    .nav__overlay1 ul {
+        list-style: none;
+    }
+
+
+    /* .nav__overlay2 */
+    nav a {
+        transition: .5s;
+        text-decoration: none;
+    }
+
+    nav a:hover {
+        color: #e1a470;
+        text-decoration: underline;
+    }
+
+    .nav__overlay2 {
+        display: flex;
+        position: absolute;
+        left: 0;
+        padding-top: 10px;
+        z-index: 11;
+
+    }
+
+    .nav__overlay2 h4 {
+        font-size: 1.2rem;
+        color: gray;
+    }
+
+    .nav__overlay2--left {
+        flex: 4;
+        padding: 0 10px;
+
+    }
+
+    .nav__overlay2--left img {
+        width: 75%;
+        box-shadow: 19px 20px 20px 1px grey;
+        margin-top: 10px;
+    }
+
+    .nav__overlay2--left p {
+        color: gray;
+        width: 95%;
+        margin: 25px 0;
+    }
+
+    .nav__overlay2--left a {
+        display: inline-block;
+        border: 1px solid #e1a470;
+        padding: 8px 20px;
+        position: relative;
+        transition: .5s;
+    }
+
+    .nav__overlay2--left a:hover {
+        background-color: #e1a470;
+        color: white;
+    }
+
+    .nav__overlay2--mid {
+        flex: 4;
+    }
+
+    .nav__overlay2--item {
+        display: flex;
+        height: 92px;
+        overflow: hidden;
+        margin: 0px 0 20px 0;
+    }
+
+    .nav__overlay2--itemkleft {
+        flex: 3;
+    }
+
+    .nav__overlay2--itemkleft img {
+        width: 100%;
+    }
+
+    .nav__overlay2--itemkright {
+        flex: 7;
+        margin-left: 10px;
+    }
+
+    .nav__overlay2--itemkright a,
+    .overlay2--right__item a {
+        display: block;
+        font-size: 1.05rem;
+        color: black;
+        font-weight: 500;
+        padding: 10px 0;
+    }
+
+    .nav__overlay2--itemkright span,
+    .overlay2--right__item span {
+        color: gray;
+        font-size: 0.75rem;
+    }
+
+    .nav__overlay2--right {
+        flex: 3;
+        margin-left: 20px;
+    }
+
+    .overlay2--right__item {
+        margin: 0px 0 20px 0;
+    }
+
+    .nav__overlay3 {
+        position: absolute;
+        left: 0;
+        padding-top: 10px;
+
+    }
+
+    .nav__overlay3__items {
+        box-sizing: border-box;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+    }
+
+    .nav__overlay3__top {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+        box-sizing: border-box;
+
+    }
+
+    .nav__overlay3__item {
+        width: 19%;
+
+    }
+
+    .nav__overlay3__item img {
+        width: 100%;
+    }
+
+    .nav__overlay3__item a {
+        display: block;
+        font-size: 1.05rem;
+        margin: 10px 0;
+    }
+
+    .nav__overlay3__item span {
+        font-size: 12px;
+        color: gray;
+    }
+    .navt__right{
+        color: white;
+    }
+    /* ----------------end nav1----------------- */
+
+
+
+    /* -------------------nav2 -----------------*/
+    .overmenu2__item a {
+        transition: .5s;
+        text-decoration: none;
+        color: rgb(54, 50, 50);
+    }
+
+    .overmenu2__item a:hover {
+        color: #e1a470;
+        text-decoration: underline;
+    }
+
+    .nav2t {
+        width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+        background-color: white;
+        z-index: 11;
+    }
+
+    .nav2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    .nav2__left {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav2__left img {
+        width: 80px;
+        margin-left: 10px;
+    }
+
+    .nav2__right i {
+        padding: 0 5px;
+    }
+
+
+    .overmenu2__contents {
+        width: 100%;
+        margin: 0 10px;
+        box-sizing: border;
+        z-index: 12;
+        display: none;
+
+    }
+
+    .overmenu2__contents h4 {
+        font-size: 18px;
+        font-weight: 500;
+        padding: 20px 0 10px 0;
+    }
+
+    .search__nav2 {
+        display: flex;
+        margin: 20px 0;
+    }
+
+    .overmenu2__contents input {
+        width: 90%;
+        padding: 8px 0;
+        border: 1px solid rgba(194, 191, 191, 0.568);
+        border-right: none;
+        border-left: none;
+        outline: none;
+        border-radius: 0;
+
+    }
+
+    .overmenu2__contents input::placeholder {
+        font-family: 'Marcellus', serif;
+        font-size: 0.85rem;
+
+    }
+
+    .search_btn {
+        border: 1px solid rgba(194, 191, 191, 0.568);
+        padding: 8px;
+        background-color: white;
+        color: black;
+    }
+
+    .search_btn1 {
+        border-right: none;
+    }
+
+    .search_btn2 {
+        border-left: none;
+    }
+
+    .overmenu2__content {
+        display: flex;
+    }
+
+    .overmenu2__content a {
+        display: block;
+        font-size: 14.5px;
+        text-decoration: none;
+        padding: 5px 0;
+
+    }
+
+    .overmenu2__item {
+        width: 49%;
+    }
+
+    .overmenu2__item--social i {
+        padding: 0 5px;
+    }
+
+    .space_nav2 {
+        padding: 15px 0;
+    }
+
+    .overmenu2__item .btn1 {
+        background-color: #e1a470;
+        width: 80px;
+        font-size: 13px;
+        text-align: center;
+        color: rgb(255, 255, 255);
+
+    }
+
+    .overmenu2__item .btn1:hover {
+        background-color: #291f1f;
+    }
+
+    .menu {
+        border: 1px solid rgb(223, 220, 220);
+        border-left: none;
+        border-right: none;
+    }
+
+    .menu ul {
+        display: inline-flex;
+        list-style: none;
+    }
+
+    .menu ul li {
+        padding: 15px;
+        font-size: 16px;
+
+    }
+
+
+    /* --------------------end nav2 ------------------- */
+
+
+
+
+    /* ----------------respon---------------------------- */
+
+    @media screen and (max-width:1025px) {
+
+        .header__bottom h1{
+            font-size: 27px;
+            margin: 15px 0;
+         }
+         .header__bottom p{
+            font-size: 15px;
+            margin: 15px 0;
+         }
+         .header__bottom  span{
+            font-size: 10px;
+         }
+         .header__bottom  i{
+            font-size: 10px;
+         }
+         .info{
+            flex-direction: column-reverse;
+            align-items: flex-start;
+         }
+         .info img{
+           width: 35px;
+           height: 35px
+         }
+         .info__right{
+            margin: 5px 0 20px 0;
+         }
+        .navt{
+            display: none;
+        }
+
+
+    }
+
+    @media screen and (min-width:1026px) {
+
+        .nav2,
+        .menu {
+            display: none;
+        }
+    }
+    
+    @media screen and (max-width:550px) {
+        .menu {
+            overflow-x: scroll;
+        }
+    }

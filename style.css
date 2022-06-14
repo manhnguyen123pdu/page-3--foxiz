@@ -49,14 +49,12 @@
 
     .grid {
         max-width: 1250px;
+        height: 100%;
         margin: auto;
     }
 
     /* header css */
-
-    header{
-        width: 100vw;
-        height: 100vh;
+    .header1{
         background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgb(41, 41, 41)),
         url(https://foxiz.themeruby.com/fashion/wp-content/uploads/sites/4/2021/08/f16.jpg);
         background-size: cover;
@@ -64,6 +62,14 @@
         box-sizing: border-box;
         
     }
+    header{
+        max-width: 1250px;
+        height: 700px;
+        margin: auto;
+       
+        
+    }
+
     .headerbottom__content{
         padding: 0 20px;
         box-sizing: border-box;
@@ -157,7 +163,6 @@
         color: black;
     }
     .nav__big{
-        position: absolute;
         width: 100%;
     }
     .navt {
@@ -165,8 +170,9 @@
         justify-content: space-between;
         align-items: center;
         position: relative;
-        padding: 0 50px;
+
         z-index: 1;
+
 
     }
     .navt__left{
@@ -178,7 +184,6 @@
         width: 100px;
     }
     nav {
-        max-width: 1250px;
         margin: auto;
     }
 

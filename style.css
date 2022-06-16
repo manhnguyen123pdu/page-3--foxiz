@@ -1094,8 +1094,21 @@
         .contentblog__ct3--right{
             margin: 0;
         }
+        .contentblog{
+           margin: 0;
+        }
+        .contentblog__content {
+            margin-left: 0px;
+        }
+        .contentblog__content--ct1{
+            display: none;
+        }
 
-
+    }
+    @media screen and (min-width:755px) {
+        .tex2{
+            display: none;
+        }
     }
 
     @media screen and (max-width:550px) {

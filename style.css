@@ -569,6 +569,7 @@
         margin: auto;
         margin-top: 30px;
         padding: 0 20px;
+        box-sizing: border-box;
 
     }
     .contentblog__social{
@@ -1103,6 +1104,13 @@
         .contentblog__content--ct1{
             display: none;
         }
+        .getinfo{
+            flex-direction: column;
+        }
+        .getinfo input{
+            width: 95%;
+            margin: 5px 0;
+        }
 
     }
     @media screen and (min-width:755px) {
@@ -1114,5 +1122,15 @@
     @media screen and (max-width:550px) {
         .menu {
             overflow-x: scroll;
+        }
+        .sharearticle__right .share__item{
+            font-size: 11px;
+            display: flex;
+        }
+        .sharearticle__right .share__item i{
+            margin: 0 5px ;
+        }
+        .sharearticle__left span{
+            display: none;
         }
     }

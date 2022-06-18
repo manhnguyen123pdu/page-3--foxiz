@@ -7,6 +7,7 @@ var nav__overlay = document.querySelectorAll('.nav__overlay')
 var nav2btn = document.querySelector('.nav2btn')
 var overmenu2__contents = document.querySelector('.overmenu2__contents ')
 var nav2 = document.querySelector('.overmenu2__contents ')
+var nd =document.querySelectorAll('.nd')
 for (m = 0; m < moon.length; m++) {
     moon[m].onclick = function () {
         for(b=0;b<background.length;b++){
@@ -56,3 +57,16 @@ nav2btn.onclick = function () {
     overmenu2__contents.classList.toggle('vissible2')
     nav2.classList.toggle('fix')
 }
+
+
+window.addEventListener('scroll',function(){
+    for(f=0;f<nd.length;f++){
+        var vtnd=nd[f].offsetTop;
+        if(window.pageYOffset>vtnd-400){
+            nd[f].classList.add('nd22')
+        }
+    }
+})
+
+
+// 
